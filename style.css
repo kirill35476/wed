@@ -1,0 +1,393 @@
+/* Общие стили для всего сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0a0f1e;
+    color: #e0e0e0;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(135deg, #0a0f1e 0%, #1a1f2e 100%);
+}
+
+/* Стили для меню навигации */
+.menu {
+    background-color: #1e2434;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: 2px solid #4a4f6e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.menu h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.menu a {
+    color: #7aa3ff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    color: #ffd700;
+    background-color: #2a3142;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.3);
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #4a4f6e, #ffd700, #4a4f6e, transparent);
+    margin: 30px 0;
+}
+
+/* Стили для основного контента */
+.main {
+    background-color: #1e2434;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    border: 1px solid #4a4f6e;
+}
+
+.main h1 {
+    color: #ffd700;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #c0c0c0;
+}
+
+.main img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 3px solid #4a4f6e;
+    transition: transform 0.3s ease;
+}
+
+.main img:hover {
+    transform: scale(1.02);
+    border-color: #ffd700;
+}
+
+/* Стили для раздела с персонажами */
+.characters {
+    background-color: #1e2434;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.characters h2 {
+    color: #ffd700;
+    font-size: 32px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #4a4f6e;
+    padding-bottom: 10px;
+}
+
+.characters h3 {
+    color: #7aa3ff;
+    font-size: 24px;
+    margin: 20px 0 15px;
+}
+
+/* Стили для списков */
+ul, ol, dl {
+    background-color: #2a3142;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 15px 0;
+    border: 1px solid #4a4f6e;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+ul li:hover, ol li:hover {
+    color: #ffd700;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+}
+
+ul li::marker {
+    color: #ffd700;
+}
+
+ol li::marker {
+    color: #7aa3ff;
+    font-weight: bold;
+}
+
+dl dt {
+    color: #ffd700;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+dl dd {
+    color: #c0c0c0;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-left: 2px solid #4a4f6e;
+}
+
+/* Стили для таблицы */
+.stats {
+    background-color: #1e2434;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.stats h2 {
+    color: #ffd700;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2a3142;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+th {
+    background-color: #4a4f6e;
+    color: #ffd700;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #4a4f6e;
+    color: #e0e0e0;
+}
+
+tr:hover {
+    background-color: #3a4155;
+    transition: 0.3s ease;
+}
+
+td img {
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 15px #ffd700;
+}
+
+/* Стили для раздела с ресурсами */
+.resources {
+    background-color: #1e2434;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.resources h2 {
+    color: #ffd700;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resources li {
+    margin-bottom: 15px;
+    background-color: #2a3142;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.resources li:hover {
+    background-color: #3a4155;
+    transform: translateX(10px);
+    border-left: 4px solid #ffd700;
+}
+
+.resources a {
+    color: #7aa3ff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.resources a:hover {
+    color: #ffd700;
+}
+
+/* Стили для футера */
+.footer {
+    background-color: #1e2434;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid #4a4f6e;
+}
+
+.footer h2 {
+    color: #ffd700;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    color: #c0c0c0;
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #7aa3ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+.footer small {
+    color: #6b7280;
+    display: block;
+    margin-top: 15px;
+}
+
+.footer img {
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #4a4f6e;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.footer img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    border-color: #ffd700;
+}
+
+/* Стили для ссылок в тексте */
+a {
+    color: #7aa3ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffd700;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .menu a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    td, th {
+        padding: 8px;
+    }
+}
+
+/* Анимации */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ffd700;
+    }
+    50% {
+        text-shadow: 0 0 20px #ffd700, 0 0 30px #7aa3ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #ffd700;
+    }
+}
+
+.menu h2, .main h1, .characters h2, .stats h2, .resources h2, .footer h2 {
+    animation: glow 3s infinite;
+}
+
+/* Дополнительные эффекты */
+::selection {
+    background-color: #ffd700;
+    color: #0a0f1e;
+}
+
+/* Стили для псевдо-элементов */
+.characters h2::before {
+    content: "⚡ ";
+    color: #ffd700;
+}
+
+.stats h2::after {
+    content: " ⚔️";
+    color: #ffd700;
+}
+
+/* Стили для цитат */
+em {
+    color: #7aa3ff;
+    font-style: italic;
+}
+
+strong {
+    color: #ffd700;
+}

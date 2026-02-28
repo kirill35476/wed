@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персонажи Risk of Rain 2 | Bootstrap</title>
+
+    <!-- Bootstrap CSS (официальный CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Дополнительная иконка для сайта (опционально) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body class="bg-dark text-light">
+
+    <!-- Навигационная панель (меню) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-warning fw-bold" href="#">
+                <i class="bi-joystick"></i> Risk of Rain 2
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#characters">Персонажи</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#stats">Характеристики</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resources">Ресурсы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент в контейнере -->
+    <main class="container my-4">
+
+        <!-- Секция "О нас" -->
+        <section id="about" class="card bg-black text-light border-warning mb-5">
+            <div class="card-body">
+                <h1 class="card-title text-warning display-4">
+                    <i class="bi-stars"></i> Risk of Rain 2: Мир персонажей
+                </h1>
+                <p class="card-text lead">Добро пожаловать на фанатский сайт, посвященный выживальщикам игры <strong>Risk of Rain 2</strong>. Здесь вы найдете информацию о классах, способностях и ссылки на полезные ресурсы.</p>
+                <img src="https://static.wikia.nocookie.net/riskofrain/images/e/e6/RoR2_App_Icon.jpg/revision/latest?cb=20200422194909"
+                     alt="Логотип Risk of Rain 2"
+                     class="img-fluid rounded border border-warning">
+            </div>
+        </section>
+
+        <!-- Секция с персонажами (списки) -->
+        <section id="characters" class="mb-5">
+            <h2 class="text-warning border-bottom border-warning pb-2 mb-4">
+                <i class="bi-grid-3x3-gap-fill"></i> Основные персонажи (Выживальщики)
+            </h2>
+
+            <div class="row">
+                <!-- Базовые классы -->
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-black text-light h-100 border-secondary">
+                        <div class="card-header bg-warning text-black fw-bold">Базовые классы</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent text-light"><span class="text-warning">•</span> <strong>COMMANDO</strong> — сбалансированный боец с винтовками.</li>
+                                <li class="list-group-item bg-transparent text-light"><span class="text-warning">•</span> <strong>HUNTGRESS</strong> — лучница, наносящая урон с расстояния.</li>
+                                <li class="list-group-item bg-transparent text-light"><span class="text-warning">•</span> <strong>MUL-T</strong> — робот, способный нести два оружия.</li>
+                                <li class="list-group-item bg-transparent text-light"><span class="text-warning">•</span> <strong>ENGINEER</strong> — ставит турели и мины.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Скрытые классы -->
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-black text-light h-100 border-secondary">
+                        <div class="card-header bg-warning text-black fw-bold">Скрытые классы</div>
+                        <div class="card-body">
+                            <ol class="list-group list-group-numbered list-group-flush bg-transparent">
+                                <li class="list-group-item bg-transparent text-light">REX (киборг-растение)</li>
+                                <li class="list-group-item bg-transparent text-light">LOADER (шахтер с крюком)</li>
+                                <li class="list-group-item bg-transparent text-light">ACRID (кристаллический монстр)</li>
+                                <li class="list-group-item bg-transparent text-light">CAPTAIN (командир с орбитальными ударами)</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Термины -->
+                <div class="col-md-4 mb-3">
+                    <div class="card bg-black text-light h-100 border-secondary">
+                        <div class="card-header bg-warning text-black fw-bold">Термины</div>
+                        <div class="card-body">
+                            <dl class="row">
+                                <dt class="col-sm-4 text-warning">Интерактивный предмет</dt>
+                                <dd class="col-sm-8">Трехмерные принтеры, алтари и сундуки за монеты.</dd>
+                                <dt class="col-sm-4 text-warning">Луна (Mithrix)</dt>
+                                <dd class="col-sm-8">Финальный босс, который крадет ваши предметы.</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Таблица характеристик -->
+        <section id="stats" class="mb-5">
+            <h2 class="text-warning border-bottom border-warning pb-2 mb-4">
+                <i class="bi-table"></i> Таблица характеристик персонажей
+            </h2>
+
+            <div class="table-responsive">
+                <table class="table table-dark table-striped table-hover border-warning">
+                    <thead class="table-warning text-black">
+                        <tr>
+                            <th>Иконка</th>
+                            <th>Имя</th>
+                            <th>Роль</th>
+                            <th>Здоровье (старт)</th>
+                            <th>Урон (старт)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://static.wikia.nocookie.net/riskofrain/images/9/9f/Commando_Icon.png/revision/latest/scale-to-width-down/50?cb=20200822172522" alt="Commando icon" width="40" class="img-thumbnail bg-dark border-warning"></td>
+                            <td>Commando</td>
+                            <td>Универсал</td>
+                            <td>110</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://static.wikia.nocookie.net/riskofrain/images/3/38/Huntress_Icon.png/revision/latest/scale-to-width-down/50?cb=20200822172540" alt="Huntress icon" width="40" class="img-thumbnail bg-dark border-warning"></td>
+                            <td>Huntress</td>
+                            <td>Убийца</td>
+                            <td>90</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://static.wikia.nocookie.net/riskofrain/images/8/8f/MUL-T_Icon.png/revision/latest/scale-to-width-down/50?cb=20200822172608" alt="MUL-T icon" width="40" class="img-thumbnail bg-dark border-warning"></td>
+                            <td>MUL-T</td>
+                            <td>Танк</td>
+                            <td>200</td>
+                            <td>11</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-muted"><i class="bi-info-circle"></i> <em>Примечание: иконки взяты из вики-энциклопедии игры.</em></p>
+        </section>
+
+        <!-- Ресурсы (ссылки) -->
+        <section id="resources" class="mb-5">
+            <h2 class="text-warning border-bottom border-warning pb-2 mb-4">
+                <i class="bi-link-45deg"></i> Полезные ссылки (внешние ресурсы)
+            </h2>
+
+            <div class="list-group">
+                <a href="https://riskofrain.fandom.com/wiki/Risk_of_Rain_2_Wiki" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action bg-black text-light border-warning">
+                    <i class="bi-wikipedia text-warning"></i> Официальная википедия игры (Fandom) — здесь описаны все предметы и персонажи.
+                </a>
+                <a href="https://store.steampowered.com/app/632360/Risk_of_Rain_2/" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action bg-black text-light border-warning">
+                    <i class="bi-steam text-warning"></i> Страница в Steam — купить игру.
+                </a>
+                <a href="https://www.youtube.com/results?search_query=risk+of+rain+2+guide" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action bg-black text-light border-warning">
+                    <i class="bi-youtube text-danger"></i> Гайды на YouTube — как играть за каждого персонажа.
+                </a>
+                <a href="#menu" class="list-group-item list-group-item-action bg-black text-light border-warning">
+                    <i class="bi-arrow-up-circle text-warning"></i> ⬆ Вернуться в меню
+                </a>
+            </div>
+        </section>
+
+        <!-- Футер (контакты) -->
+        <footer id="contact" class="card bg-black text-light border-warning mt-5">
+            <div class="card-body text-center">
+                <h2 class="text-warning h4"><i class="bi-envelope"></i> Контакты</h2>
+                <p>Свяжитесь с нами: <a href="mailto:fan@ror2.ru" class="text-warning">fan@ror2.ru</a></p>
+                <p><small class="text-muted">Сайт создан в учебных целях. Все права на изображения принадлежат Gearbox Publishing и Hopoo Games.</small></p>
+                <img src="https://static.wikia.nocookie.net/riskofrain/images/8/85/Risky_Items.png/revision/latest/scale-to-width-down/150?cb=20200820003634"
+                     alt="Предметы Risk of Rain 2"
+                     width="150"
+                     class="img-fluid rounded border border-warning mt-2">
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Bootstrap JavaScript (для работы навигационного меню на мобильных) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
